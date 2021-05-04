@@ -1,12 +1,12 @@
 <?php
     use yii\helpers\Html;
-    use yii\widgets\ActiveForm;
+    use yii\bootstrap\ActiveForm;
 
-    $form = ActiveForm::begin();
-    $form->field($model, 'name');
-    $form->field($model, 'email');
+    $form = ActiveForm::begin(['id' => 'entry-form']);
+    echo $form->field($model, 'name');
+    echo $form->field($model, 'email');
     ?>
     <div class="form-group">
-        <?php Html::submitButton('Submit', ['class' => 'btn btn-primary'])?>
+        <?php echo Html::submitButton('Submit', ['class' => 'btn btn-primary'])?>
     </div>
     <?php ActiveForm::end();?>

@@ -39,9 +39,9 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Fitur', 'url' => ['/site/fitur']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Jenis', 'url' => ['/jenis']],
+            ['label' => 'Supplier', 'url' => ['/supplier']],
+            ['label' => 'Barang', 'url' => ['/barang']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
